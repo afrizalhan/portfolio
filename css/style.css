@@ -1,0 +1,1407 @@
+/*-----------------------------------------------------------------
+
+[Table of contents]
+
+1. Base CSS Start
+2. Site Preloader Css Start
+3. Main Menu Area Start
+4. Welcome Area Start
+5. Bio Area Start
+6. Specilizing In Area Start
+7. Skill Area Start
+8. gallery Area Start
+9. Working process Aera Start 
+10. Client Area Start 
+11. Contact Area Start
+12. Footer Area Start
+13. Click BottomToTop
+
+
+==================================================================*/
+
+/*====================================================================
+1. Base CSS Start
+======================================================================*/
+
+/*--Google Font Import--*/
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Medium.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Semibold.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Light.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: normal;
+    font-family: 'Acumin Pro';
+}
+
+body {
+    font-weight: 400;
+    color: #203566;
+    font-family: 'Acumin Pro';
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    color: #2c3e50;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1,
+.h1,
+.h2,
+.h3 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: auto;
+    color: #252e59;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 42px;
+    color: #1f3566;
+    font-weight: bold;
+
+}
+
+h2 span {
+    color: #ffa614;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: rgba(32, 53, 102, .9);
+    margin-bottom: 0px;
+}
+
+.margin-0 {
+    margin: 0
+}
+
+.form-control {
+    border: 1px solid #e2e2e2;
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.modal {
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.49);
+}
+.slick-initialized .slick-slide:focus{
+    outline: 0px;
+}
+.affix {
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 725px;
+}
+
+
+/*=================================================
+2. Site Preloader Css Start
+===================================================*/
+.site-preloader {
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.site-preloader .spinner {
+    width: 60px;
+    height: 60px;
+    margin: 21% auto;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+
+
+/* ================================================
+3. Main Menu Area Start
+===================================================*/
+
+.support-bar-area {
+    display: none;
+}
+
+header.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 23px 0px 23px;
+    background: rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.3)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: 0px;
+}
+
+#mainHeader .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    -webkit-background: #017eff;
+    -moz-background: #017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#mainHeader .navbar-brand span {
+    color: #ffa614;
+    text-transform: uppercase;
+}
+
+#mainHeader.header.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    border-bottom: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#mainHeader.header .nav-link {
+    color: #4d516e;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 600;
+    position: relative;
+}
+#mainHeader.header .nav-link::before{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 0%;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    -webkit-background: #017eff;
+    -moz-background: #017eff;
+    background: #017eff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+
+}
+
+#mainHeader.header .nav-link.active::before {
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mainHeader.header .nav-link:hover::before {
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mainHeader.header .nav-item:last-child .nav-link {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.navbar-light .navbar-toggler {
+    border: 0px;
+}
+
+/* =============================================
+4. Welcome Area Start
+================================================ */
+
+.welcomeArea {
+    padding: 172px 0px 209px;
+}
+
+.welcomeArea h1 span{
+    display: block;
+    font-size: 30px;
+
+}
+.welcomeArea .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.welcomeArea .welcomaareaRow {
+    padding: 297px 0px 192px;
+}
+
+
+.welcomeArea .left .tagline {
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+    background: rgba(245,99,123,1);
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.welcomeArea .links {
+    display: inline-block;
+    margin-top: 45px;
+}
+
+.welcomeArea .links a {
+    background: rgba(245,99,123,1);
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    display: inline-block;
+    color: #fff;
+    width: 130px;
+    height: 55px;
+    line-height: 55px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-right: -4px;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+}
+.welcomeArea .links a::after{
+    position: absolute;
+    content: " ";
+    top: 2px;
+    left: 2px;
+    width: 126px;
+    height: 51px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+.welcomeArea .links a p{
+    position: inherit;
+    z-index: 9;    
+    line-height: 55px;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.welcomeArea .links a.link1:hover::after{
+background: #fff;
+}
+.welcomeArea .links a:hover p{
+    color: #252e59;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.welcomeArea .links a.link2{
+    margin-left: 10px;
+}
+.welcomeArea .links a.link2:hover {
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+}
+
+
+.welcomeArea .links a.link2::after{
+    background: #fff;
+}
+.welcomeArea .links a.link2 p{
+    color: #252e59;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.welcomeArea .links a.link2:hover::after{
+    background: rgba(255, 255, 255, 0);
+}
+.welcomeArea .links a.link2:hover p{
+    color: #fff;
+}
+
+
+
+/* =============================================
+Welcome Area End
+================================================ */
+
+
+
+/* ================================================
+5. Bio Area Start
+=================================================== */
+
+.bio .right .box{
+    position: relative;
+    padding: 0px 15px 0px 0px;
+    text-align: center;
+}
+
+/* .bio .right .box::before {
+    position: absolute;
+    top: -79px;
+    left: -78px;
+    content: " ";
+    width: 300px;
+    height:500px;
+    background: #eee;
+    box-sizing: border-box;
+    border: 20px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: -webkit-linear-gradient(#fff, #fff), linear-gradient(#017eff, #017eff);
+    background-image: -moz-linear-gradient(#fff, #fff), linear-gradient(#017eff, #017eff);
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#017eff, #017eff);
+    z-index: -1;
+} */
+ 
+/* 
+.bio .right .box::after {
+    position: absolute;
+    bottom: -18px;
+    right: -15px;
+    content: " ";
+    width: 144%;
+    height: 130.4%;
+    background: -webkit-linear-gradient(45deg, rgba(1, 126, 255, 0.5), rgba(1, 126, 255, 0.5));
+    background: -moz-linear-gradient(45deg, rgba(1, 126, 255, 0.5), rgba(1, 126, 255, 0.5));
+    background: linear-gradient(45deg, rgba(1, 126, 255, 0.5), rgba(1, 126, 255, 0.5));
+    z-index: 1;
+} */
+
+.bio .left  {
+    /* background: #fff;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.02); */
+    position: relative;
+    z-index: 9;
+    padding: 120px 30px 75px 0px;
+}
+/* .bio .left .media::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    top: -141px;
+} */
+.bio .left  .media .title{
+    margin-right: 100px;
+}
+
+.bio .left  .media .title h2{
+    position: relative;
+}
+
+.bio .left  .media .title h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: rgba(245,99,123,1);
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    z-index: 9;
+
+}
+
+.bio .left .media-body .content h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 39px;
+    background: rgba(245,99,123,1);
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+/* ================================================
+Bio Area End
+=================================================== */
+
+
+
+/* ===================================================
+6. Specilizing In Area Start
+====================================================== */
+.specilizing {
+    padding: 140px 0px 130px;
+}
+.specilizing .sectionTitle  .media  h2{
+    position: relative;
+    margin-right: 100px;
+}
+.specilizing .sectionTitle {
+    margin-bottom: 62px;
+}
+.specilizing  .sectionTitle  .media  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    z-index: 991;
+
+}
+
+.specilizing .sectionTitle .media-body p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.specilizing  .box{
+    border: 1px solid #efefef;
+    background: #fdfafd;
+    padding: 36px 30px 45px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.specilizing  .box span{
+    font-size: 72px;
+    font-weight: 600;
+    background: #017eff;
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    opacity: .30;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.specilizing .box h3 {
+    margin-top: 51px;
+    margin-bottom: 23px;
+    background: #4d516e;
+    background: -webkit-linear-gradient(45deg, #4d516e, #4d516e);
+    background: -moz-linear-gradient(45deg, #4d516e, #4d516e);
+    background: linear-gradient(45deg, #4d516e, #4d516e);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.specilizing .box:hover h3,
+.specilizing .box.active h3
+ {
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.specilizing  .box:hover  span,
+.specilizing  .box.active  span
+{
+    opacity: 1;
+}
+
+.specilizing  .box:hover{
+   background: #fff;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
+   border-color: transparent;
+}
+
+.specilizing  .box:hover,
+.specilizing  .box.active
+{
+   background: #fff;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
+   border-color: transparent;
+}
+
+
+/* ===================================================
+Specilizing In Area End
+====================================================== */
+
+
+/* ===================================================
+7. Skill Area Start
+====================================================== */
+
+.skill .sectionTitle  h2{
+    position: relative;
+    margin-bottom: 100px;
+    margin-bottom: 48px;
+}
+.skill {
+    padding: 129px 0px 130px;
+    border-top: 1px solid #f5f5f5;
+}
+.skill  .sectionTitle  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    bottom: -25px;
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    z-index: 991;
+
+}
+
+.skill .sectionTitle .tagline{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.skill .links{
+    margin-top: 40px;
+}
+
+.skill .links a {
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    display: inline-block;
+    width: 130px;
+    height: 55px;
+    line-height: 55px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-right: -4px;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+}
+.skill .links a::after{
+    position: absolute;
+    content: " ";
+    top: 2px;
+    left: 2px;
+    width: 126px;
+    height: 51px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+.skill .links a p{
+    position: inherit;
+    z-index: 999;    
+    line-height: 55px;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.skill .links a:hover::after{
+background: #fff;
+}
+.skill .links a:hover p{
+    color: #252e59;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+.skill .links a.link2{
+    margin-left: 10px;
+}
+.skill .links a.link2:hover {
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+}
+
+
+.skill .links a.link2::after{
+    background: #fff;
+}
+.skill .links a.link2 p{
+    color: #252e59;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.skill .links a.link2:hover::after{
+    background: rgba(255, 255, 255, 0);
+}
+.skill .links a.link2:hover p{
+    color: #fff;
+}
+
+
+.skill .box{
+     text-align: center;
+    background: #fdfafd;
+     padding: 50px 0px 50px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skill .box .title{
+    margin-top:  20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.skill .box:hover{
+    background: #fff;
+}
+
+/* ===================================================
+Skill Area Start
+====================================================== */
+
+
+
+
+/* ============================================
+8. gallery Area Start
+============================================== */
+
+.gallery {
+    padding: 120px 0 100px 0;
+    background: #fdfafd;
+}
+
+.gallery .photo-gallery-masony-wrapper .photo-gallery-masony-inner .single-photo-gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery .photo-gallery-manu-wrppaer {
+    margin-bottom: 48px;
+}
+
+.gallery .photo-gallery-manu-wrppaer ul {
+    border-radius: 35px;
+    display: inline-block;
+}
+
+.gallery .photo-gallery-manu-wrppaer ul li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4d516e;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.gallery .photo-gallery-manu-wrppaer ul li.active {  
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gallery .photo-gallery-manu-wrppaer ul li:hover {
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gallery .sectionTitle  .media  h2{
+    position: relative;
+    margin-right: 100px;
+}
+.gallery .sectionTitle {
+    margin-bottom: 60px;
+}
+.gallery  .sectionTitle  .media  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    z-index: 98;
+
+}
+
+.gallery .sectionTitle .media-body p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gallery .single-photo-gallery-item {
+    position: relative;
+}
+
+.gallery .single-photo-gallery-item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, rgba(245, 99, 124, 0.80), rgba(182, 58, 168, 0.80));
+    background: -moz-linear-gradient(45deg, rgba(245, 99, 124, 0.80), rgba(182, 58, 168, 0.80));
+    background: linear-gradient(45deg, rgba(245, 99, 124, 0.80), rgba(182, 58, 168, 0.80));
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+.gallery .single-photo-gallery-item .overlay a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-59%, -50%);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.gallery .single-photo-gallery-item .overlay a:hover{
+    background: #fff;
+    color: #b63aa8;
+}
+
+.gallery .single-photo-gallery-item:hover .overlay{
+    transform: scale(1);
+}
+
+
+/*========================================
+ 9. Working process Aera Start 
+ ==========================================*/
+.possitionRelative{
+    position: relative;
+}
+.possitionRelative img {
+    position: absolute;
+    left: 121px;
+    top: -35px;
+    z-index: 0;
+}
+ .wprocess{
+    padding: 122px 0px 130px;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);   
+ }
+ .wprocess .sectionTitle  .media  h2{
+    position: relative;
+    margin-right: 100px;
+    color: #fff;
+}
+.wprocess .sectionTitle {
+    margin-bottom: 63px;
+}
+.wprocess  .sectionTitle  .media  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: -webkit-linear-gradient(45deg, #fff, #fff);
+    background: -moz-linear-gradient(45deg, #fff, #fff);
+    background: linear-gradient(45deg, #fff, #fff);
+    z-index: 991;
+
+}
+
+.wprocess .sectionTitle .media-body p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: #fff;
+    background: -webkit-linear-gradient(45deg, #fff, #fff);
+    background: -moz-linear-gradient(45deg, #fff, #fff);
+    background: linear-gradient(45deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.wprocess .box {
+    background: #fff;
+    padding: 30px 15px 30px;
+    border-radius: 5px;    
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.wprocess .box:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
+}
+.wprocess .box i{
+    font-size: 28px;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.wprocess .box h3{
+    font-size: 20px;    
+    margin-bottom: 5px;
+    margin-top: 22px;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.wprocess .box h3 p{
+    font-size: 12px;
+}
+
+
+/*========================================
+ Working process Aera End 
+ ==========================================*/
+
+
+
+
+
+/*===========================================
+ 10. Client Area Start 
+ ============================================*/
+ .review{
+     padding: 123px 0px 130px;
+     background: #f9f7fa;
+ }
+ .review .sectionTitle  .media  h2{
+    position: relative;
+    margin-right: 100px;
+}
+.review .sectionTitle {
+    margin-bottom: 63px;
+}
+.review  .sectionTitle  .media  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    z-index: 991;
+
+}
+
+.review .sectionTitle .media-body p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.review  .box{
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+}
+
+.review  .box .media  img{
+  margin-right: 20px;  
+}
+
+.review  .box  .boxBody {
+    padding-top: 26px;
+}
+.review  .box .hrader .content p{
+    font-size: 16px;
+    font-weight: 600;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/*===========================================
+ Client Area End 
+ ============================================*/
+
+
+
+/* ==========================================
+11. Contact Area Start
+============================================= */
+
+.contact{
+    padding: 123px 0px 130px;
+}
+
+
+.contact .sectionTitle  .media  h2{
+    position: relative;
+    margin-right: 100px;
+}
+.contact .sectionTitle {
+    margin-bottom: 62px;
+}
+.contact  .sectionTitle  .media  h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    z-index: 991;
+
+}
+
+.contact .sectionTitle .media-body p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    background: rgba(245,99,123,1);
+    background: -webkit-#017eff;
+    background: -moz-#017eff;
+    background: #017eff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.contact form input,
+.contact form textarea
+{
+    width: 100%;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder
+{
+  color: #4d516e;
+  opacity: .5;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact form input:focus,
+.contact form textarea:focus
+{
+  outline: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #be3ea2;
+}
+
+.contact form input{
+height: 70px;
+padding-left: 30px;
+background: #fdfafd;
+border: 1px solid #eee;
+margin-bottom: 20px;
+}
+
+.contact form textarea{
+    height: 250px;
+    padding: 30px;
+    background: #fdfafd;
+    border: 1px solid #eee;  
+    resize: none;
+}
+.contact form  button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    background: rgba(245,99,123,1);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+    border: 0px;
+    cursor: pointer;
+}
+
+.contact form  button:hover{
+    background: -webkit-linear-gradient(-45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(-45deg, #f5637c, #b63aa8);
+    background: linear-gradient(-45deg, #f5637c, #b63aa8);
+}
+
+/* ==========================================
+Contact Area End
+============================================= */
+
+
+
+/* ====================================================
+12. Footer Area Start
+======================================================= */
+
+.footer {
+    background: #1f3566;
+    padding: 57px 0px 53px;
+    position: relative;
+}
+
+.footer p,
+.footer a,
+.footer i {
+    color: #fff;
+}
+
+.footer .footerLink li{
+    display: inline-block;
+}
+.footer .footerLink li a{
+    margin-right: 40px;
+}
+
+
+
+.footer .fsocialLinks{
+    position: relative;
+    width: 100%;
+}
+.footer .fsocialLinks  ul{
+    padding-right: 6px;
+}
+.footer .fsocialLinks li{
+    display: inline-block;
+    width: 45px;
+    text-align: left;
+}
+.footer .fsocialLinks a{
+    position: absolute;
+    bottom: -23px;
+    display: inline-block;
+}
+.footer .fsocialLinks i{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.footer .fsocialLinks i.fa-instagram{
+    background: #eb4b8b;
+}
+.footer .fsocialLinks i.fa-google-plus-g{
+    background: #de4937;
+}
+.footer .fsocialLinks i.fa-facebook-f{
+    background: #34559c;
+}
+.footer .fsocialLinks i.fa-twitter{
+    background: #00afe9;
+}
+
+.footer .fsocialLinks i:hover{
+    height: 70px;
+    line-height: 70px;
+    margin-top: 0px;
+}
+.footer .fsocialLinks i.active{
+    height: 70px;
+    line-height: 70px;
+    margin-top: 0px;
+}
+
+/*==================================================
+13. Click BottomToTop
+====================================================*/
+.totop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 1;
+}
+.totop:hover{
+    animation: none;
+}
+.totop.show {
+    opacity: 1;
+}
+
+.totop>a {
+    color: #fff;
+    display: block;
+    border-radius: 750%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
+    background: -webkit-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(45deg, #f5637c, #b63aa8);
+    background: linear-gradient(45deg, #f5637c, #b63aa8);
+}
+
+.totop>a p {
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.totop>a:hover {
+    background: -webkit-linear-gradient(-45deg, #f5637c, #b63aa8);
+    background: -moz-linear-gradient(-45deg, #f5637c, #b63aa8);
+    background: linear-gradient(-45deg, #f5637c, #b63aa8);
+}
