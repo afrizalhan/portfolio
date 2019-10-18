@@ -1406,7 +1406,7 @@ Contact Area End
     background: linear-gradient(-45deg, #f5637c, #b63aa8);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
     .mm{
         margin-bottom: 10px;
     }    
